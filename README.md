@@ -19,7 +19,7 @@ var imposter = require("git-imposter");
 imposter.set_author("test", "test@example.com"); //name, email
 imposter.add("test/test.txt", "some contents\n", "100644"); //100 - blob, 644 - permissions
 imposter.add("another test.txt", "hello git!\n", "100644");
-imposter.serve(8080, "127.0.0.1");
+imposter.serve(8080, "127.0.0.1"); //listen on 127.0.01, port 8080
 ```
 
 Doing `git clone http://127.0.0.1:8080/test.git` will pull the two files and their respective parent folders into "test".
