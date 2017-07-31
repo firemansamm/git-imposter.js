@@ -14,7 +14,7 @@ To get the files you serve, simply do a `git clone` on the port.
 After cloning this into your `node_modules` folder as `git-imposter`, you probably need to `npm install`.
 
 The example code below creates an imposter server listening on localhost, serving two files:
-```
+```javascript
 var imposter = require("git-imposter");
 imposter.set_author("test", "test@example.com"); //name, email
 imposter.add("test/test.txt", "some contents\n", "100644"); //100 - blob, 644 - permissions
