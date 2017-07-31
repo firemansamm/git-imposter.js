@@ -1,0 +1,17 @@
+{
+  "name": "git-imposter",
+  "version": "0.0.1",
+  "description": "Allows you to serve files over git in JS.",
+  "main": "git-imposter.js",
+  "dependencies": {
+    "net": "^1.0.2",
+    "pako": "^1.0.5",
+    "text-encoding": "^0.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
