@@ -4,9 +4,7 @@
   "description": "Allows you to serve files over git in JS.",
   "main": "git-imposter.js",
   "dependencies": {
-    "net": "^1.0.2",
-    "pako": "^1.0.5",
-    "text-encoding": "^0.6.4"
+    "pako": "^1.0.5"
   },
   "devDependencies": {},
   "scripts": {
