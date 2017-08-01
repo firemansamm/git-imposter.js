@@ -26,3 +26,6 @@ Doing `git clone http://127.0.0.1:8080/test.git` will pull the two files and the
 
 ### Not Bugs
  - Cloning without a ".git" at the end of the URL will cause git-imposter to crash. This is by design.
+
+### Potential to-dos?
+ - Allow revision with `git pull`
