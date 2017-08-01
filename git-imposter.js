@@ -61,13 +61,17 @@ exports.serve = function(port, hostname){
         	    //socket.write(current_pack);
         	    socket.end();
         	} else {
-        	    socket.write("HTTP/1.1 404 Not Found\r\n");
-        	    socket.write("Content-Type: text/html\r\n");
-        	    socket.write("Content-Length: 5\r\n");
-        	    socket.write("\r\n");
-        	    socket.write("oops!\r\n");
-        	    socket.write("\r\n");
-        	    socket.end();
+        	    try{
+            	    socket.write("HTTP/1.1 404 Not Found\r\n");
+            	    socket.write("Content-Type: text/html\r\n");
+            	    socket.write("Content-Length: 5\r\n");
+            	    socket.write("\r\n");
+            	    socket.write("oops!\r\n");
+            	    socket.write("\r\n");
+            	    socket.end();
+        	    } catch (err) {
+        	        console.log("socket was closed");
+        	    }
         	}
     	});
     	
