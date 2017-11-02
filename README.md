@@ -24,8 +24,8 @@ imposter.serve(8080, "127.0.0.1"); //listen on 127.0.0.1, port 8080 - omit addre
 
 Doing `git clone http://127.0.0.1:8080/test.git` will pull the two files and their respective parent folders into "test".
 
-### Not Bugs
- - Cloning without a ".git" at the end of the URL will cause git-imposter to crash. This is by design.
+### Bugs
+ - Cloning without a ".git" at the end of the URL will cause git-imposter to crash.
 
 ### Potential to-dos?
  - Allow revision with `git pull`
